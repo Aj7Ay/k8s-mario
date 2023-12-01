@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: mario-cluster
+  region: ap-south-1
+
+nodeGroups:
+  - name: ng-1
+    desiredCapacity: 2
+    instanceType: t3.small
