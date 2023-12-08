@@ -1,14 +1,4 @@
 #!/bin/bash
-
-# Update package list
-sudo apt-get update
-
-# Install Docker
-sudo apt-get install docker.io -y
-sudo usermod -aG docker ubuntu
-newgrp docker
-sudo chmod 777 /var/run/docker.sock
-
 # Install Terraform
 sudo apt install wget -y
 wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
