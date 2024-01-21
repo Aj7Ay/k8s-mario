@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: mario-deployment
 spec:
-  replicas: 2  # You can adjust the number of replicas as needed
+  replicas: 3  # You can adjust the number of replicas as needed
   selector:
     matchLabels:
       app: mario
